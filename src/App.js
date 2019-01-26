@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
-import TodosContainer from './containers/TodosContainer';
+import TodosContainer from './components/TodosContainer';
 
 export default class App extends Component {
 
