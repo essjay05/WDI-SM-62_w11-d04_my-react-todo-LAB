@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Home from './components/Home';
-import TodosContainer from './components/TodosContainer';
+import MyRoutes from './config/routes';
+
 
 export default class App extends Component {
 
@@ -10,11 +9,8 @@ export default class App extends Component {
 		return (
 		<div className="container">
 			<Header />
-			<Switch>
-				<Route exact path='/' component={ Home }/>
-				<Route path='/todos' component={ TodosContainer }/>
-			</Switch>
+			{ MyRoutes }
 		</div>
-		)
+		);
 	}
 }
